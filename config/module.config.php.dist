@@ -1,0 +1,16 @@
+<?php
+
+return [
+    'partial_module' => [
+        'view_renderer' => 'ZendTwig\Renderer\TwigRenderer',
+
+        'partials' => [
+            [
+                'name'     => 'test.twig',
+                'path'     => 'application/test.twig',
+                'priority' => 10,
+                'group'    => 'app',
+            ],
+        ],
+    ],
+];
