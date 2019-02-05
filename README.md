@@ -12,7 +12,7 @@ To use this module, add it to your modules.config.php file:
 return [
     ...
     
-    'Nybbl\Partial',
+    'Nybbl\PartialModule',
 ];
 ```
 
