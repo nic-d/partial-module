@@ -6,9 +6,9 @@
  * Time: 14:23
  */
 
-use Nybbl\Partial\View;
-use Nybbl\Partial\Service;
-use Nybbl\Partial\Renderer;
+use Nybbl\PartialModule\View;
+use Nybbl\PartialModule\Service;
+use Nybbl\PartialModule\Renderer;
 
 return [
     'service_manager' => [
