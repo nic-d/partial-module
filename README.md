@@ -57,4 +57,7 @@ $range = $this->partialHelper()->range(0,3, ['planet' => 'world']);
 
 // Render a group - returns an array of rendered partials
 $group = $this->partialHelper()->group('app', ['planet' => 'world']);
+
+// Render all - returns an array of all rendered partials
+$all = $this->partialHelper()->all(['planet' => 'world']);
 ```
