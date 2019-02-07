@@ -29,5 +29,10 @@
         "psr-4": {
             "Nybbl\\PartialModule\\": "src/"
         }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Nybbl\\PartialModule\\Tests\\": "test/"
+        }
     }
 }
