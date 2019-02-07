@@ -102,6 +102,14 @@ class PartialService implements PartialServiceInterface
     }
 
     /**
+     * @return array
+     */
+    public function loadPartialsByAll(): array
+    {
+        return $this->partials;
+    }
+
+    /**
      * @param array $partials
      * @return array
      */

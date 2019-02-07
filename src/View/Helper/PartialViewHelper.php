@@ -69,4 +69,13 @@ class PartialViewHelper extends AbstractHelper implements PartialViewHelperInter
     {
         return $this->partialRenderer->renderGroup($templateGroupName, $templateData);
     }
+
+    /**
+     * @param null $templateData
+     * @return array
+     */
+    public function all($templateData = null): array
+    {
+        return $this->partialRenderer->renderAll($templateData);
+    }
 }

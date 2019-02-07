@@ -93,4 +93,20 @@ class PartialRenderer implements PartialRendererInterface
 
         return $renderedPartials;
     }
+
+    /**
+     * @param null|array|object $data
+     * @return array
+     */
+    public function renderAll($data = null): array
+    {
+        $renderedPartials = [];
+        $allPartials = $this->partialService->loadPartialsByAll();
+
+        foreach ($allPartials as $allPartial) {
+            $renderedPartials[] = $this->render($allPartial['name'], $data);
+        }
+
+        return $renderedPartials;
+    }
 }

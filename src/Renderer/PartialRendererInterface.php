@@ -55,4 +55,10 @@ interface PartialRendererInterface
      * @throws PartialNotFoundException
      */
     public function renderGroup(string $partialGroup, $data = null): array;
+
+    /**
+     * @param null|array|object $data
+     * @return array
+     */
+    public function renderAll($data = null): array;
 }

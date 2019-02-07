@@ -48,6 +48,11 @@ interface PartialServiceInterface
     public function loadPartialsByGroupName(string $groupName): array;
 
     /**
+     * @return array
+     */
+    public function loadPartialsByAll(): array;
+
+    /**
      * @param array $partials
      * @return array
      */

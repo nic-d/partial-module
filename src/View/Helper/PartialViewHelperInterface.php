@@ -42,4 +42,10 @@ interface PartialViewHelperInterface
      * @return array
      */
     public function group(string $templateGroupName, $templateData = null): array;
+
+    /**
+     * @param null|array|object $templateData
+     * @return array
+     */
+    public function all($templateData = null): array;
 }
